@@ -1,20 +1,109 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class='container'>
+  <app-header></app-header><br>
+  <!-- <div class="row">
+      <div class='card'>
+        <div class="col-sm-6">
+          <app-card cardTitle='About' cardDescription="More info to know me better" cardImg="./../../assets/about.jpg"></app-card>
+        </div>
+      </div>
+
+      <div class='card'>
+        <div class="col-sm-6">
+          <app-card cardTitle='Portfolio' cardDescription="See my projects" cardImg="./../../assets/about.jpg"></app-card>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <app-card cardTitle='Contact' cardDescription="See my projects" cardImg="./../../assets/about.jpg"></app-card>
+    </div>
+    <div class="col-sm-6">
+      <app-card cardTitle='Contact' cardDescription="See my projects" cardImg="./../../assets/about.jpg"></app-card>
+  </div>
+    </div> -->
+
+
+    <!-- <div class="card-deck">
+      <div class="card">
+        <app-card cardTitle='About' cardDescription="More info to know me better" cardImg="./../../assets/about.jpg"></app-card>
+      </div>
+      <div class="card">
+        <app-card cardTitle='Portfolio' cardDescription="See my projects" cardImg="./../../assets/about.jpg"></app-card>
+      </div>
+      <div class="card">
+        <app-card cardTitle='Contact' cardDescription="Find me in social media" cardImg="./../../assets/about.jpg"></app-card>
+      </div>
+    </div> -->
+
+    <div class="row">
+      <div class="col-md-4">
+        <app-card
+          cardTitle='About'
+          cardDescriptionFront="Know me better"
+          cardImg="./../../assets/about.jpg"
+          footer="true"
+          (chosenCard)="selectedCard($event)">
+            My name is Kamil Łęczycki.<br>
+            I am 25 years old. I live in Kraków.<br>
+            In 2019 I graduated from AGH University of Science and Technology.<br>
+            Currently I am working as Software Engineer (Web Developer).<br>
+            I am interested in computer science, cycling and video editing.<br>
+        </app-card>
+      </div>
+
+      <div class="col-md-4">
+        <app-card
+          cardTitle='Projects'
+          cardDescriptionFront="See my projects"
+          cardImg="./../../assets/projects.jpg"
+          footer="false"
+          (chosenCard)="selectedCard($event)">
+            I want to constantly develop my programming skills and others.<br>
+            Therefore, in my free time I like to work at my own projects.<br>
+            <br>Some of my project: <br>
+            <font size="2">
+              <ul>
+                <li><a href="https://switchcasekam.github.io/cmentarz_podrzecze/" style="color: #ffffff"><b>Page of cemetary in Podrzecze</b></a></li>
+                <li><a href="https://switchcasekam.github.io/home-page/" style="color: #ffffff"><b>Own home page</b></a></li>
+                <li><a href="https://www.youtube.com/watch?v=heHvEr6plZs" style="color: #ffffff"><b>Tour de Pologne 2016 in Nowy Sącz</b></a></li>
+                <li><a href="https://www.youtube.com/watch?v=tfsspZ6EpfQ" style="color: #ffffff"><b>Tour de Pologne 2016 in Nowy Sącz</b></a></li>
+                <li><a href="https://www.youtube.com/watch?v=wv5DCOooKvY" style="color: #ffffff"><b>Review of decade 2010-2019</b></a></li>
+              </ul>
+            </font>
+        </app-card>
+      </div>
+
+      <div class="col-md-4">
+        <app-card
+          cardTitle='Hobbies'
+          cardDescriptionFront="Interests and hobbies"
+          cardImg="./../../assets/running.jpg"
+          footer="false"
+          (chosenCard)="selectedCard($event)">
+          <font size="2">
+            Apart from the programming ...
+            my big passion is sport.
+            I try to stay in good shape, so I regulary go running, cycling and workout at the gym.<br>
+            My personal records in running:<br>
+            <ul>
+              <li>Sprint (3.8 km) - 0:15:23</li>
+              <li>10 km - 0:48:46</li>
+              <li>Half-marathon (21 km) - 1:46:42</li>
+            </ul>
+            About my bicycle rides check my <a href="https://www.strava.com/athletes/45537084" style="color: #ffffff"><b>Strava</b></a><br>
+            Moreover I love to make football travel to watch matches on the stadium:<br>
+            <ul>
+              <li>19.05.2019 AC Milan - Frosinone</li>
+              <li>19.01.2020 Hertha Berlin - Bayern Munchen</li>
+            </ul>
+          </font>
+        </app-card>
+      </div>
+  </div>
+<br>
+
+  <!-- <app-content id="content" [cardName]="chosenCard"></app-content> -->
+
+
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
 

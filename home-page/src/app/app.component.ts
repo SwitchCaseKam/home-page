@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'home-page';
+  chosenCard: string;
+
+  selectedCard(cardName): void {
+    console.log(cardName);
+    this.chosenCard = cardName;
+    console.log('chosenCard in app component = ', this.chosenCard);
+    const el = document.getElementById('content');
+    el.scrollIntoView({behavior: 'smooth'});
+  }
+
 }
