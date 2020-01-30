@@ -1,39 +1,5 @@
 <div class='container'>
   <app-header></app-header><br>
-  <!-- <div class="row">
-      <div class='card'>
-        <div class="col-sm-6">
-          <app-card cardTitle='About' cardDescription="More info to know me better" cardImg="./../../assets/about.jpg"></app-card>
-        </div>
-      </div>
-
-      <div class='card'>
-        <div class="col-sm-6">
-          <app-card cardTitle='Portfolio' cardDescription="See my projects" cardImg="./../../assets/about.jpg"></app-card>
-        </div>
-      </div>
-
-      <div class="col-sm-6">
-        <app-card cardTitle='Contact' cardDescription="See my projects" cardImg="./../../assets/about.jpg"></app-card>
-    </div>
-    <div class="col-sm-6">
-      <app-card cardTitle='Contact' cardDescription="See my projects" cardImg="./../../assets/about.jpg"></app-card>
-  </div>
-    </div> -->
-
-
-    <!-- <div class="card-deck">
-      <div class="card">
-        <app-card cardTitle='About' cardDescription="More info to know me better" cardImg="./../../assets/about.jpg"></app-card>
-      </div>
-      <div class="card">
-        <app-card cardTitle='Portfolio' cardDescription="See my projects" cardImg="./../../assets/about.jpg"></app-card>
-      </div>
-      <div class="card">
-        <app-card cardTitle='Contact' cardDescription="Find me in social media" cardImg="./../../assets/about.jpg"></app-card>
-      </div>
-    </div> -->
-
     <div class="row">
       <div class="col-md-4">
         <app-card
@@ -42,11 +8,15 @@
           cardImg="assets/about.jpg"
           footer="true"
           (chosenCard)="selectedCard($event)">
-            My name is Kamil Łęczycki.<br>
-            I am 25 years old. I live in Kraków.<br>
-            In 2019 I graduated from AGH University of Science and Technology.<br>
-            Currently I am working as Software Engineer (Web Developer).<br>
-            I am interested in computer science, cycling and video editing.<br>
+            <div body>
+              <font size="2">
+                My name is Kamil Łęczycki.<br>
+                I am 24 years old. I live in Kraków.<br>
+                In 2019 I graduated from AGH University of Science and Technology.<br>
+                Currently I am working as Software Engineer (Web Developer).<br>
+                I am interested in computer science, cycling and video editing.<br>
+              </font>
+            </div>
         </app-card>
       </div>
 
@@ -54,13 +24,14 @@
         <app-card
           cardTitle='Projects'
           cardDescriptionFront="See my projects"
-          cardImg="assets/projects.jpg"
+          cardImg="assets/pro3.jpg"
           footer="false"
           (chosenCard)="selectedCard($event)">
-            I want to constantly develop my programming skills and others.<br>
-            Therefore, in my free time I like to work at my own projects.<br>
-            <br>Some of my project: <br>
+          <div body>
             <font size="2">
+              I want to constantly develop my programming skills and others.
+              Therefore, in my free time I like to work at my own projects.<br>
+              <br>Some of my project: <br>
               <ul>
                 <li><a href="https://switchcasekam.github.io/cmentarz_podrzecze/" style="color: #ffffff"><b>Page of cemetary in Podrzecze</b></a></li>
                 <li><a href="https://switchcasekam.github.io/home-page/" style="color: #ffffff"><b>Own home page</b></a></li>
@@ -69,6 +40,7 @@
                 <li><a href="https://www.youtube.com/watch?v=wv5DCOooKvY" style="color: #ffffff"><b>Review of decade 2010-2019</b></a></li>
               </ul>
             </font>
+          </div>
         </app-card>
       </div>
 
@@ -76,34 +48,32 @@
         <app-card
           cardTitle='Hobbies'
           cardDescriptionFront="Interests and hobbies"
-          cardImg="assets/running.jpg"
+          cardImg="assets/run3.jpg"
           footer="false"
           (chosenCard)="selectedCard($event)">
-          <font size="2">
-            Apart from the programming ...
-            my big passion is sport.
-            I try to stay in good shape, so I regulary go running, cycling and workout at the gym.<br>
-            My personal records in running:<br>
-            <ul>
-              <li>Sprint (3.8 km) - 0:15:23</li>
-              <li>10 km - 0:48:46</li>
-              <li>Half-marathon (21 km) - 1:46:42</li>
-            </ul>
-            About my bicycle rides check my <a href="https://www.strava.com/athletes/45537084" style="color: #ffffff"><b>Strava</b></a><br>
-            Moreover I love to make football travel to watch matches on the stadium:<br>
-            <ul>
-              <li>19.05.2019 AC Milan - Frosinone</li>
-              <li>19.01.2020 Hertha Berlin - Bayern Munchen</li>
-            </ul>
-          </font>
+          <div body>
+            <font size="2">
+              Apart from the programming ... sport is my big passion.
+              I try to stay in good shape, so I regulary go running, cycling and workout at the gym.<br>
+              My personal records in running:<br>
+              <ul>
+                <li>Sprint (3.8 km) - 0:15:23</li>
+                <li>10 km - 0:48:46</li>
+                <li>Half-marathon (21 km) - 1:46:42</li>
+              </ul>
+              About my bicycle rides check my <a href="https://www.strava.com/athletes/45537084" style="color: #ffffff"><b>Strava</b></a><br>
+              Moreover, I love to make football travel to watch matches on the stadiums:<br>
+              <ul>
+                <li>19.05.2019:  AC Milan - Frosinone</li>
+                <li>19.01.2020:  Hertha Berlin - Bayern Munchen</li>
+                <li>many times:  Cracovia - ...</li>
+              </ul>
+            </font>
+          </div>
         </app-card>
       </div>
   </div>
-<br>
-
-  <!-- <app-content id="content" [cardName]="chosenCard"></app-content> -->
-
-
+  <br>
 </div>
 
 

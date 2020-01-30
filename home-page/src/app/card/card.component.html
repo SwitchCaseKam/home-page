@@ -1,33 +1,3 @@
-<!-- <div class="card text-center border-info mb-3" style="width: 18rem;">
-    <img src='{{cardImg}}' class="card-img-top">
-    <div class="card-body">
-      <p class="card-text">{{ cardDescription }}</p>
-      <a href="#" class="btn btn-primary" (click)="showOptions()">{{cardTitle}}</a>
-      <button class="btn btn-primary" (click)="showOptions()">{{cardTitle}}</button>
-    </div>
-  </div>
- -->
-
-<!-- <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div class="card card-body text-center">
-        <img src='{{cardImg}}' class="card-img-top"> -->
-        <!-- <h4 class="card-title">{{ cardTitle }}</h4> -->
-        <!-- <p class="card-text">{{ cardDescription }}</p>
-        <button class="btn btn-primary" (click)="selectCard(cardTitle)">{{cardTitle}}</button>
-
-      <div class="flip-card-back">
-        <h1>Kamil Łęczycki</h1>
-        <p>Software Engineer (Web Application)</p>
-        <p>AGH</p>
-      </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-
 <div class="card card-flip h-100">
   <div class="card-front text-white bg-white">
       <div class="card card-body text-center">
@@ -41,17 +11,16 @@
   <div class="card-back bg-primary">
       <div class="card-body text-primary">
           <h3 class="card-title-back">{{ cardTitle }}</h3>
-          <p class="card-text-back"><ng-content></ng-content></p>
+          <p class="card-text-back"><ng-content select="[body]"></ng-content></p>
           <div *ngIf="footer==='true'" class="card-footer">
-            <div class="social-medias">
-              <a href="https://www.facebook.com/people/Kamil-%C5%81%C4%99czycki/100004666694279" class="fa fa-facebook-official"></a>
-              <a href="https://github.com/SwitchCaseKam" class="fa fa-github"></a>
-              <a href="kamil.leczycki.ns@gmail.com" class="fa fa-google"></a>
-              <a href="https://pl.linkedin.com/" class="fa fa-linkedin-square"></a>
-              <a href="https://www.youtube.com/channel/UC1tMSfzcU7Rv4mBRnLuDjqA/featured/" class="fa fa-youtube"></a>
-            </div>
-            <!-- <button (click)="selectCard(cardTitle)">Read more ...</button> -->
+              <!-- <ng-content select="[foot]"></ng-content> -->
+              <div class="social-medias">
+                <a href="https://www.facebook.com/people/Kamil-%C5%81%C4%99czycki/100004666694279" class="fa fa-facebook-official"></a>
+                <a href="https://github.com/SwitchCaseKam" class="fa fa-github" ></a>
+                <a href="mailto:kamil.leczycki.ns@gmail.com" class="fa fa-google"></a>
+              </div>
           </div>
       </div>
   </div>
+  <br>
 </div>
