@@ -1,6 +1,6 @@
-<div class="card card-flip h-100">
+<div class="card card-flip">
   <div class="card-front text-white bg-white">
-      <div class="card card-body text-center">
+      <div class="card-body text-center">
           <div class="picture-place-holder">
             <img src='{{cardImg}}' class="img-fluid">
           </div><br>
@@ -13,7 +13,6 @@
           <h3 class="card-title-back">{{ cardTitle }}</h3>
           <p class="card-text-back"><ng-content select="[body]"></ng-content></p>
           <div *ngIf="footer==='true'" class="card-footer">
-              <!-- <ng-content select="[foot]"></ng-content> -->
               <div class="social-medias">
                 <a href="https://www.facebook.com/people/Kamil-%C5%81%C4%99czycki/100004666694279" class="fa fa-facebook-official"></a>
                 <a href="https://github.com/SwitchCaseKam" class="fa fa-github" ></a>

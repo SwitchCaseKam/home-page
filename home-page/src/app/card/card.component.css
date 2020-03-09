@@ -27,6 +27,7 @@
   height: 100%;
   margin: 0;
   display: flex;
+  border: 0px;
 }
 
 .card-front {
@@ -61,6 +62,10 @@
 }
 
 .social-medias {
-  /* background-color: aliceblue; */
   text-align: center;
 }
+
+.card-font {
+  font-size: 2;
+}
+
