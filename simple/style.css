@@ -1,9 +1,9 @@
 :root {
     --blue: #1e90ff;
     --black: rgb(31, 30, 30);
-    --grey: rgb(218, 209, 209);
+    --grey: rgb(230, 226, 226);
     --white: rgb(255, 255, 255);
-    --yellow: rgb(247, 246, 198);
+    --yellow: #e4f1fe;
 }
 
 body {
