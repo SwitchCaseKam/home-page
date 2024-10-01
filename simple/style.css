@@ -21,6 +21,10 @@ a {
   color: var(--grey);
 }
 
+ul {
+  padding-left: 1em;
+}
+
 .navbar {
     border-bottom: 1px solid var(--blue);
 }
@@ -83,7 +87,6 @@ a {
  }
   
 .flip-card-front {
-    padding: 0.25em;
     padding-top: 2.5em;
     color: var(--black);
     text-align: center;
@@ -97,11 +100,14 @@ a {
 .flip-card-back {
     font-size: 0.9em;
     font-weight: 10;
-    padding-left: 1em;
-    padding-right: 1em;
     background-color: var(--blue);
     color: white;
     transform: rotateY(180deg);
+}
+
+.card-content {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 @media (max-width: 768px) {
